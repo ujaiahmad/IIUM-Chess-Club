@@ -1,0 +1,146 @@
+/* Title, video and logo styling */
+body {
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.badgeformat {
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.badge1 {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 30px;
+}
+
+main {
+  background-image: url("https://images.pexels.com/photos/411207/pexels-photo-411207.jpeg?cs=srgb&dl=pexels-sebastian-voortman-411207.jpg&fm=jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.title {
+  text-align: center;
+}
+
+#desc {
+  font-size: 15px;
+  line-height: 2em;
+}
+
+.vid {
+  text-align: center;
+}
+
+#vidbtn {
+  padding: 10px;
+  background-color: #BBDC2F;
+  border: 1px solid black;
+  font-weight: bold;
+}
+
+#vidbtn:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Tab styling */
+.page {
+  max-width: 640px;
+  margin: 0 auto 30px auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.tab-list {
+  margin: 0;
+  padding: 0;
+}
+
+.tab-list li {
+  display: inline-block;
+  list-style-type: none;
+  background-color: #161616;
+  border-bottom: 3px solid #BBDC2F;
+  font-family: arial;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.tab-list li a {
+  color: #BBDC2F;
+  display: block;
+  padding: 3px 10px 3px 10px;
+}
+
+/* Hover */
+.tab-list li.active, .tab-list li.hover {
+  background-color: cyan;
+  border-bottom: 3px solid #161616;
+}
+
+.tab-list li.active a, .tab-list li a:hover {
+  color: white;
+  background-color: #BBDC2F;
+}
+
+/* Panel */
+.tab-panel {
+  display: none;
+  background-color: #BBDC2F;
+  font-weight: bolder;
+  color: #161616;
+  font-stretch: extra-expanded;
+  min-height: 150px;
+  overflow: auto;
+  border-radius: 0px 15px;
+}
+
+.tab-panel.active {
+  display: block;
+}
+
+.tab-panel p {
+  margin: 20px;
+  text-align: justify;
+}
+
+#billboard {
+  text-align: center;
+}
+
+.js-warning {
+  display: none;
+}
+
+.no-js .js-warning {
+  display: block;
+  border: 3px solid #fff;
+  text-align: center;
+  background-color: #fff;
+  color: #db5391;
+  padding: 10px;
+}
+
+@media (max-width: 750px) {
+
+   form{
+     flex-direction: column;
+   }
+
+   input[type = text], input[type = email]{
+     width: 300px;
+   }
+
+   .weekly{
+     width: 70%;
+   }
+}

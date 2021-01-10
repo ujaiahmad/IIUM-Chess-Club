@@ -1,0 +1,89 @@
+form span{
+   color: #FCFCFC;
+}
+
+form {
+  //border: solid;
+  display: flex;
+  //display: inline-block;
+  //flex-direction: column;
+  padding: 30px 5%;
+  background-color:  #FCFCFC;
+  //background-color: #def2f1;
+  //background-color: #86c232;
+  //background-color: #6e7475;
+}
+
+form button {
+  padding: 9px 20px;
+  color: white;
+  //color: black;
+  background-color: #2B4E18;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+form a {
+ color: white;
+}
+
+button:hover {
+  background-color: rgba(0, 82, 77, 0.8);
+  color: black;
+}
+
+.description, .h3{
+  //display: flex-end;
+  //float: right;
+  //width: 70px;
+  padding: 20px 5% 0px 5%;
+  background-color:  #FCFCFC;
+  //border: solid;
+}
+
+.weekly{
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px;
+
+}
+
+.right, .left{
+  //padding: 0 70px 0 0;
+  padding: 15px;
+  border-radius: 5px;
+  border: 2px solid black;
+  background-color: #BBDC2F;
+  margin: 10px;
+}
+
+.right{
+  padding-top: 22px;
+}
+
+input[type = text], input[type = email]{
+  //border-radius: 3px;
+  //border: 0.8px solid;
+  width: 100%;
+  padding: 2.5px 20px #161616;
+
+}
+
+@media (max-width: 750px) {
+
+   form{
+     flex-direction: column;
+   }
+
+   input[type = text], input[type = email]{
+     width: 300px;
+   }
+
+   .weekly{
+     width: 70%;
+   }
+}

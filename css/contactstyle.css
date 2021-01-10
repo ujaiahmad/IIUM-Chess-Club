@@ -1,0 +1,70 @@
+main {
+  text-align: center;
+  margin: 0 auto;
+  font-family: arial;
+  //font-size: 150%;
+
+}
+
+.location {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  background-color: #BBDC2F;
+  border-radius: 10px;
+}
+
+#location {
+  line-height: 2;
+  text-align: left;
+  margin-left: 20px;
+  background-color: white;
+}
+
+.statement, .socmed {
+  line-height: 2;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #BBDC2F;
+  border-radius: 10px;
+  padding: 20px;
+  width: 40%;
+}
+
+.socmed ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.socmed p, .statement p {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#contact {
+  display: inline-block;
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 30px;
+}
+
+#sscontact {
+  text-decoration: none;
+  color: blue;
+}
+
+@media (max-width: 750px) {
+  form {
+    flex-direction: column;
+  }
+
+  input[type=text], input[type=email] {
+    width: 300px;
+  }
+
+  .weekly {
+    width: 70%;
+  }
+}
