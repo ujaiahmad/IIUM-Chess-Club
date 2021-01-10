@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>HomePage - IIUM Chess Club</title>
+  <link rel="shortcut icon" href="pictures/icon/IIUM Chess logo only.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/navstyle.css">
+  <link rel="stylesheet" href="css/homepagestyle.css">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="main.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <header class="hdr">
+    <img class="logo" src="pictures/icon/IIUM Chess logo only.png" alt="logo" onclick="toggleNav()">
+    <a class="home" href="homepage2.html"> <button>Home</button> </a>
+    <nav>
+      <ul class="nav_links">
+        <li><a href="registration.html">Register</a></li>
+        <li><a href="tournamentpage.html">Tournament</a> </li>
+        <li><a href="gallery2.html">Gallery</a> </li>
+        <li><a href="contact.html">Contact Us</a> </li>
+      </ul>
+    </nav>
+  </header>
+
+  <aside class="nav-sidebar">
+    <ul>
+      <li>Fide id<br><a href="https://malaysiachess.org/fide-id-application/"><img class="fd" src="pictures/icon/mcf.png" alt=""></a></li>
+      <li>Lichess<br><a href="https://lichess.org/"><img class="li" src="pictures/icon/lichess.png" alt=""></a></li>
+      <li>Chess.com<br><a href="https://www.chess.com/home"><img class="ch" src="pictures/icon/chess.png" alt=""></a></li>
+      <li>Best Players<br><a href="players.html"><img class="bp" src="pictures/icon/Best.png" alt=""></a></li>
+    </ul>
+  </aside>
+
+  <main class="background">
+    <div>
+      <ul class="badgeformat">
+        <li class="badge1"><img src="pictures/icon/IIUM Chess.png" alt="iiumchessclub" width=200 height=200></li>
+        <li class="badge1"><img src="pictures/icon/mcf.png" alt="email" width=200 height=200></li>
+      </ul>
+    </div>
+
+    <div class="title">
+      <h1>IIUM CHESS CLUB OFFICIAL SITE</h1><br>
+      <p id="desc"><strong>A site that tells the story behind the successful achievements <br>
+          of chess sport in International Islamic University Malaysia</strong></p>
+    </div><br></br>
+
+    <div class="vid">
+      <video id="video" width="420">
+        <source src="chessvideo.mp4" type="video/mp4">
+        <source src="chessvideo.ogg" type="video/ogg">
+        Your browser does not support HTML video.
+      </video>
+      <br><br>
+      <p id="desc"><em>Introduction video on Chess (Click buttons below to play / pause / enlarge / reduce the size)</em></p><br>
+      <button id="vidbtn" onclick="playPause()">Play/Pause</button>
+      <button id="vidbtn" onclick="makeBig()">Big</button>
+      <button id="vidbtn" onclick="makeSmall()">Small</button>
+      <button id="vidbtn" onclick="makeNormal()">Normal</button>
+    </div><br><br>
+
+    <section class="page">
+      <div class="tabs">
+        <ul class="tab-list">
+          <li class="active"><a class="tab-control" href="#tab-1">
+              <h3>ABOUT US</h3>
+            </a></li>
+          <li><a class="tab-control" href="#tab-2">
+              <h3>OBJECTIVES</h3>
+            </a></li>
+          <li><a class="tab-control" href="#tab-3">
+              <h3>WHY TO JOIN US</h3>
+            </a></li>
+        </ul>
+
+        <div class="tab-panel active" id="tab-1">
+          <p>IIUM had introduced the chess sport since 3rd of February 2016. <br></br>
+            There were a total of 328 members and 15 official trainers in this club. <br></br>
+            So far, we have received almost 35 achievements since the establishment.</p>
+        </div>
+
+        <div class="tab-panel" id="tab-2">
+          <p>1) To introduce the students about chess sport held in IIUM and the benefits of joining us. <br></br>
+            2) To establish and strengthen the bonding between the participants, members and the trainers. <br></br>
+            3) To raise IIUM's name as one of the Islamic institutions with many successful achievements in chess events.</p>
+        </div>
+
+        <div class="tab-panel" id="tab-3">
+          <p>1) Able to know and gain many new friends, plus new experience. <br></br>
+            2) The trainers were really talented and had many years of experience in participating chess competition. <br></br>
+            3) A guaranteed step to be a professional chess player in the future.</p>
+        </div>
+      </div>
+    </section>
+
+    <h3 class="h3">Find us:</h3>
+  </main>
+
+  <div class="link">
+    <ul class="link_ul">
+      <li>Whatsapp<br> <a href="#"><img src="pictures/icon/whatsapp.png" alt=""></a></li>
+      <li>Instagram<br><a href="https://www.instagram.com/mustangschess/?hl=en"><img src="pictures/icon/ig.png" alt=""></a></li>
+      <li>Discord<br><a href="#"><img src="pictures/icon/discord.png" alt=""></a> </li>
+    </ul>
+  </div>
+  <footer>
+    2020-2020 www.iiumchessclub.com - All Rights Reserved.
+    Last updated: 11/11/2020 12:52:49
+  </footer>
+
+  <script src="homepagescript.js"></script>
+</body>
+
+</html>
